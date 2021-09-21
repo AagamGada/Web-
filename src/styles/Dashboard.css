@@ -1,0 +1,40 @@
+@font-face {
+    font-family: introFont;
+    src: url(../font/KohSantepheap-Regular.ttf);
+  }
+.Container{
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    width: fit-content;
+    padding: 1%;
+    margin-left: 1%;
+    text-align: center;
+    margin-bottom: 1%;
+    font-family: introFont;
+}
+.bar{
+    width: 700px;
+    margin-left: 1%;
+}
+a {
+    color: rgb(93, 93, 187);
+    text-decoration: none;
+  }
+
+.header{
+    font-family: introFont;
+    text-align: center;
+}
+.button {
+    background-color: white;
+    color: #555555;
+    border: 2px solid #555555;
+    padding: 1%;
+    font-weight: bold;
+    margin-left: 1%;
+  }
+  
+  .button:hover {
+    background-color: #555555;
+    color: white;
+    font-weight: bold;
+  }
