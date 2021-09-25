@@ -92,6 +92,7 @@ export default function Dashboard() {
       ) : (
         <div>
           <h1 className="header">Dashboard</h1>
+          <br />
           <div>
             <Link to="/postpage" className="button">
               Go To Post Page

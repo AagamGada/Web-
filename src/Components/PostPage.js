@@ -91,6 +91,7 @@ export default function PostPage() {
       ) : (
         <div>
           <h1 className="header">Post Page</h1>
+          <br />
           <div>
             <Link to="/" className="button">
               Go To Dashboard
