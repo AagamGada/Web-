@@ -99,7 +99,7 @@ export default function Dashboard() {
           </div>
           <br />
           <br />
-          <div style={{ display: "inline" }}>
+          <div style={{display: "flex", justifyContent: "space-between"}}>
             <div className="Container">
               <h2>Totol Number of Posts</h2>
               <h3>{posts}</h3>
@@ -121,7 +121,7 @@ export default function Dashboard() {
             </div>
           </div>
           <br />
-          <div className="Container">
+          <div className="top5">
             <h2>Latest 5 Published posts List</h2>
             {latestPosts.map((post) => (
               <div key={post.id}>

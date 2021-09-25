@@ -98,100 +98,104 @@ export default function PostPage() {
           </div>
           <br />
           <br />
-          <div className="Container">
-            <h2>List of Posts without Meta Description</h2>
-            {meta.length === 0 ? (
-              <p>No Post Found</p>
-            ) : (
-              meta.map((post) => (
-                <div key={post.id}>
-                  <a href={post.url} target="_blank" rel="noreferrer">
-                    {post.title}
-                  </a>
-                  <br />
-                </div>
-              ))
-            )}
+          <div style={{ display: "flex", justifyContent: "space-between" }} className="content">
+            <div className="ContainerPost">
+              <h2>List of Posts without Meta Description</h2>
+              {meta.length === 0 ? (
+                <p>No Post Found</p>
+              ) : (
+                meta.map((post) => (
+                  <div key={post.id}>
+                    <a href={post.url} target="_blank" rel="noreferrer">
+                      {post.title}
+                    </a>
+                    <br />
+                  </div>
+                ))
+              )}
+            </div>
+            <br />
+            <div className="ContainerPost">
+              <h2>Too long Meta Description</h2>
+              {longMeta.length === 0 ? (
+                <p>No Post Found</p>
+              ) : (
+                longMeta.map((post) => (
+                  <div key={post.id}>
+                    <a href={post.url} target="_blank" rel="noreferrer">
+                      {post.title}
+                    </a>
+                    <br />
+                  </div>
+                ))
+              )}
+            </div>
+            <br />
+            <div className="ContainerPost">
+              <h2>Too long URL, more than 100 chars</h2>
+              {longURL.length === 0 ? (
+                <p>No Post Found</p>
+              ) : (
+                longURL.map((post) => (
+                  <div key={post.id}>
+                    <a href={post.url} target="_blank" rel="noreferrer">
+                      {post.title}
+                    </a>
+                    <br />
+                  </div>
+                ))
+              )}
+            </div>
           </div>
-          <br />
-          <div className="Container">
-            <h2>Too long Meta Description</h2>
-            {longMeta.length === 0 ? (
-              <p>No Post Found</p>
-            ) : (
-              longMeta.map((post) => (
-                <div key={post.id}>
-                  <a href={post.url} target="_blank" rel="noreferrer">
-                    {post.title}
-                  </a>
-                  <br />
-                </div>
-              ))
-            )}
-          </div>
-          <br />
-          <div className="Container">
-            <h2>Too long URL, more than 100 chars</h2>
-            {longURL.length === 0 ? (
-              <p>No Post Found</p>
-            ) : (
-              longURL.map((post) => (
-                <div key={post.id}>
-                  <a href={post.url} target="_blank" rel="noreferrer">
-                    {post.title}
-                  </a>
-                  <br />
-                </div>
-              ))
-            )}
-          </div>
-          <br />
-          <div className="Container">
-            <h2>List of Posts without Featured Image</h2>
-            {image.length === 0 ? (
-              <p>No Post Found</p>
-            ) : (
-              image.map((post) => (
-                <div key={post.id}>
-                  <a href={post.url} target="_blank" rel="noreferrer">
-                    {post.title}
-                  </a>
-                  <br />
-                </div>
-              ))
-            )}
-          </div>
-          <br />
-          <div className="Container">
-            <h2>Too Short Posts, Below 250 words</h2>
-            {shortPost.length === 0 ? (
-              <p>No Post Found</p>
-            ) : (
-              shortPost.map((post) => (
-                <div key={post.id}>
-                  <a href={post.url} target="_blank" rel="noreferrer">
-                    {post.title}
-                  </a>
-                  <br />
-                </div>
-              ))
-            )}
-          </div>
-          <br />
-          <div className="Container">
-            <h2>Too Long Posts, More than 1500 words</h2>
-            {longPost.length === 0 ? (
-              <p>No Post Found</p>
-            ) : (
-              longPost.map((post) => (
-                <div key={post.id}>
-                  <a href={post.url} target="_blank" rel="noreferrer">
-                    {post.title}
-                  </a>
-                  <br />
-                </div>
-              ))
-            )}
+          <div style={{ display: "flex", justifyContent: "space-between", marginTop:"5%" }} className="content">
+            <br />
+            <div className="ContainerPost">
+              <h2>List of Posts without Featured Image</h2>
+              {image.length === 0 ? (
+                <p>No Post Found</p>
+              ) : (
+                image.map((post) => (
+                  <div key={post.id}>
+                    <a href={post.url} target="_blank" rel="noreferrer">
+                      {post.title}
+                    </a>
+                    <br />
+                  </div>
+                ))
+              )}
+            </div>
+            <br />
+            <div className="ContainerPost">
+              <h2>Too Short Posts, Below 250 words</h2>
+              {shortPost.length === 0 ? (
+                <p>No Post Found</p>
+              ) : (
+                shortPost.map((post) => (
+                  <div key={post.id}>
+                    <a href={post.url} target="_blank" rel="noreferrer">
+                      {post.title}
+                    </a>
+                    <br />
+                  </div>
+                ))
+              )}
+            </div>
+            <br />
+            <div className="ContainerPost">
+              <h2>Too Long Posts, More than 1500 words</h2>
+              {longPost.length === 0 ? (
+                <p>No Post Found</p>
+              ) : (
+                longPost.map((post) => (
+                  <div key={post.id}>
+                    <a href={post.url} target="_blank" rel="noreferrer">
+                      {post.title}
+                    </a>
+                    <br />
+                  </div>
+                ))
+              )}
+            </div>
           </div>
         </div>
       )}

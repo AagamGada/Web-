@@ -5,15 +5,44 @@
 .Container{
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
     width: fit-content;
+    margin-left: 2%;
+    margin-right: 2%;
     padding: 1%;
-    margin-left: 1%;
+    height: fit-content;
+    /* margin-left: 1%; */
     text-align: center;
     margin-bottom: 1%;
     font-family: introFont;
+    background: lavender;
+}
+.ContainerPost{
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  width: fit-content;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 1%;
+  height: fit-content;
+  /* margin-left: 1%; */
+  text-align: center;
+  margin-bottom: 1%;
+  font-family: introFont;
+  background: lavender;
+}
+.top5{
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    /* width: fit-content; */
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 1%;
+    text-align: center;
+    margin-bottom: 1%;
+    font-family: introFont;
+    background: lavender;
 }
 .bar{
     width: 700px;
-    margin-left: 1%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 a {
     color: rgb(93, 93, 187);
@@ -23,6 +52,9 @@ a {
 .header{
     font-family: introFont;
     text-align: center;
+    background: lightslategrey;
+    padding: 1%;
+    color: white;
 }
 .button {
     background-color: white;
@@ -38,3 +70,19 @@ a {
     color: white;
     font-weight: bold;
   }
+
+  @media only screen and (max-width: 600px) {
+    .Container {
+      margin-right: 1%;
+      margin-left: 1%;
+    }
+    .top5{
+      margin-right: 10%;
+      margin-left: 10%;
+    }
+    .bar {
+      margin-right: 10%;
+      margin-left: 10%;
+    }
+  }
+  
